@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History | FitDiet</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">FitDiet</div>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="diet.html">Diet Plan</a></li>
+        <li><a href="workouts.html">Workouts</a></li>
+        <li><a href="chatbot.html">Chatbot</a></li>
+        <li><a href="progress.html">Progress</a></li>
+        <li><a href="history.html" class="active">History</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="auth.html">Login</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+  <main>
+    <section class="history-section">
+      <h1>History</h1>
+      <button id="export-summary">Export Summary (PDF)</button>
+      <h2>Weight Logs</h2>
+      <table id="weight-logs">
+        <thead><tr><th>Date</th><th>Weight (kg)</th><th>Fat %</th><th>Muscle %</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <h2>Meals Followed</h2>
+      <table id="meals-logs">
+        <thead><tr><th>Date</th><th>Meal</th><th>Status</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <h2>Workouts Completed</h2>
+      <table id="workouts-logs">
+        <thead><tr><th>Date</th><th>Workout</th><th>Status</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <h2>Chatbot Interactions</h2>
+      <table id="chatbot-logs">
+        <thead><tr><th>Date</th><th>Message</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a> |
+      <a href="profile.html">Profile</a> |
+      <a href="diet.html">Diet Plan</a> |
+      <a href="workouts.html">Workouts</a> |
+      <a href="chatbot.html">Chatbot</a>
+    </div>
+    <p>&copy; 2024 FitDiet. All rights reserved.</p>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html> 

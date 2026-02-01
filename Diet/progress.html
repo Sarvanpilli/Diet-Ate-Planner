@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress Tracking | FitDiet</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  Your Personalized Diet Plan
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">FitDiet</div>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="diet.html">Diet Plan</a></li>
+        <li><a href="workouts.html">Workouts</a></li>
+        <li><a href="chatbot.html">Chatbot</a></li>
+        <li><a href="progress.html" class="active">Progress</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="auth.html">Login</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+  <main>
+    <section class="progress-section">
+      <h1>Your Progress</h1>
+      <div class="chart-container" style="position: relative; height:60vh; width:80vw; margin: auto;">
+        <canvas id="progress-chart"></canvas>
+      </div>
+      <form id="log-form">
+        <h2>Log Your Progress</h2>
+        <label>Date: <input type="date" name="date" required></label>
+        <label>Weight (kg): <input type="number" name="weight" min="30" max="250" required></label>
+        <label>Fat %: <input type="number" name="fat" min="0" max="100"></label>
+        <label>Muscle %: <input type="number" name="muscle" min="0" max="100"></label>
+        <button type="submit">Add Log</button>
+      </form>
+      <div class="goal-meter">
+        <h2>Goal Completion</h2>
+        <div class="progress-bar"><div id="goal-progress"></div></div>
+      </div>
+      <div class="streaks-badges">
+        <h2>Streaks & Badges</h2>
+        <div id="streaks">🔥 0-day streak</div>
+        <div id="badges">🏅 No badges yet</div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a> |
+      <a href="profile.html">Profile</a> |
+      <a href="diet.html">Diet Plan</a> |
+      <a href="workouts.html">Workouts</a> |
+      <a href="chatbot.html">Chatbot</a>
+    </div>
+    <p>&copy; 2024 FitDiet. All rights reserved.</p>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html> 

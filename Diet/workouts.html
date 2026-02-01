@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workouts | FitDiet</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">FitDiet</div>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="diet.html">Diet Plan</a></li>
+        <li><a href="workouts.html" class="active">Workouts</a></li>
+        <li><a href="chatbot.html">Chatbot</a></li>
+        <li><a href="progress.html">Progress</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="auth.html">Login</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+  <main>
+    <section class="workout-section modern-section">
+      <h1 class="section-title">Workout Log</h1>
+      <div class="workout-flex-container">
+        <div class="workout-form-card">
+          <form id="add-workout-entry-form" class="modern-form">
+            <h3>Add Workout</h3>
+            <div class="form-row">
+              <input type="text" name="exerciseName" placeholder="Exercise Name" required>
+              <input type="number" name="duration" placeholder="Duration (minutes)" required>
+            </div>
+            <div class="form-row">
+              <input type="number" name="caloriesBurned" placeholder="Calories Burned" required>
+            </div>
+            <button type="submit" class="primary-btn">Add Workout</button>
+          </form>
+        </div>
+        <div class="workout-entries-card">
+          <h3>Logged Workouts</h3>
+          <div id="workout-results" class="workout-results-cards">
+            <!-- Workout entries will be shown here as cards -->
+            <table class="workout-table">
+              <thead>
+                <tr><th>Date</th><th>Workout</th><th>Calories</th><th>Action</th></tr>
+              </thead>
+              <tbody id="planner-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a> |
+      <a href="profile.html">Profile</a> |
+      <a href="diet.html">Diet Plan</a> |
+      <a href="workouts.html">Workouts</a> |
+      <a href="chatbot.html">Chatbot</a>
+    </div>
+    <p>&copy; 2024 FitDiet. All rights reserved.</p>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html> 

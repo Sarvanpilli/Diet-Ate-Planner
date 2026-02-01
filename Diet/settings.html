@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings | FitDiet</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">FitDiet</div>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="diet.html">Diet Plan</a></li>
+        <li><a href="workouts.html">Workouts</a></li>
+        <li><a href="chatbot.html">Chatbot</a></li>
+        <li><a href="progress.html">Progress</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="settings.html" class="active">Settings</a></li>
+        <li><a href="auth.html">Login</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+  <main>
+    <section class="settings-section">
+      <h1>Settings</h1>
+      <form id="settings-form">
+        <h2>Edit Profile</h2>
+        <label>Name: <input type="text" name="name"></label>
+        <label>Email: <input type="email" name="email"></label>
+        <h2>Change Goals</h2>
+        <label>Fitness Goal:
+          <select name="goal">
+            <option value="">Select</option>
+            <option value="weight_loss">Weight Loss</option>
+            <option value="weight_gain">Weight Gain</option>
+            <option value="muscle_gain">Muscle Gain</option>
+            <option value="fat_loss">Fat Loss</option>
+            <option value="fat_gain">Fat Gain</option>
+          </select>
+        </label>
+        <h2>Notification Preferences</h2>
+        <label><input type="checkbox" name="notify_email"> Email Notifications</label>
+        <label><input type="checkbox" name="notify_push"> Push Notifications</label>
+        <h2>Device Sync (Coming Soon)</h2>
+        <button type="button" disabled>Sync Device</button>
+        <h2>Account</h2>
+        <button type="button" id="delete-account">Delete Account</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a> |
+      <a href="profile.html">Profile</a> |
+      <a href="diet.html">Diet Plan</a> |
+      <a href="workouts.html">Workouts</a> |
+      <a href="chatbot.html">Chatbot</a>
+    </div>
+    <p>&copy; 2024 FitDiet. All rights reserved.</p>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html> 
